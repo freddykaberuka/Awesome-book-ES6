@@ -12,7 +12,7 @@ export default class Book {
         <p>${el.author}</p>
         <button type="button" id=${el.id} class='remove-button'>Remove</button>
         </div>`,
-    );
+    ).join('');
     const Allbtn = document.querySelectorAll('.remove-button');
     Allbtn.forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -28,7 +28,8 @@ export default class Book {
       author,
       id,
     };
-    this.bookStore.push(addbook); localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
+    this.bookStore.push(addbook);
+    localStorage.setItem('singleBook', JSON.stringify(this.bookStore));
     this.getBookList();
   }
 
