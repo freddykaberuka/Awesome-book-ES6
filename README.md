@@ -1,5 +1,4 @@
 # Awesome-book-ES6
-# Global CTF Competition Summit
 
  This is a website that publish the add and remove books from local storage with ES6 technology
  
